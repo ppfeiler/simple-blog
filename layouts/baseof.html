@@ -4,14 +4,17 @@
   {{ partial "head.html" . }}
 </head>
 <body class="{{if .Site.Params.background_image}}background-image{{end}}">
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  <div class="content">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+    <main>
+      baseOf.html
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
 </body>
 </html>

@@ -4,6 +4,9 @@
       --background-image: url({{ with .Site.Params.background_image }}{{ . }}{{ end }});
     {{- end }}
     --background-color: {{ with .Site.Params.background_color }}{{ . }}{{ else }}#FFF{{ end }};
+    --content-background-color: {{ with .Site.Params.content_background_color }}{{ . }}{{ else }}#FAFAFA{{ end }};
+    --content-max-width: {{ with .Site.Params.content_max_width }}{{ . }}{{ else }}1100px{{ end }};
+    --content-min-width: {{ with .Site.Params.content_min_width }}{{ . }}{{ else }}320px{{ end }};
 
     background-color: var(--background-color);
   }
