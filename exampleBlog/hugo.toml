@@ -23,7 +23,7 @@ theme = 'simple-blog'
 
 [params]
 # (optional) The Background Image wich will be shown on all pages.
-background_image = "https://www.fv-floridsdorf.at/wp-content/uploads/2021/01/donauinsel-5164595_1920.jpg"
+background_image = "background.jpg"
 
 # (optional) The Background Color if no Background Image is given.
 background_color = "#FFF"
@@ -38,4 +38,4 @@ content_min_width = "320px"
 content_max_width = "1100px"
 
 # (optional) The Brand Logo which will be shown in the Header
-#brand_logo = "https://..."
+brand_logo = "brand.png"

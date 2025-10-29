@@ -1,7 +1,7 @@
 <style>
   body {
     {{- if .Site.Params.background_image }}
-      --background-image: url({{ with .Site.Params.background_image }}{{ . }}{{ end }});
+      --background-image: url({{ with .Site.Params.background_image }}{{ . | relURL }}{{ end }});
     {{- end }}
     --background-color: {{ with .Site.Params.background_color }}{{ . }}{{ else }}#FFF{{ end }};
     --site-background-color: {{ with .Site.Params.site_background_color }}{{ . }}{{ else }}#FAFAFA{{ end }};
