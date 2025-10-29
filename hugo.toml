@@ -21,12 +21,4 @@ title = 'My New Hugo Site'
 [module]
   [module.hugoVersion]
     extended = false
-    min = '0.146.0'
-
-[params]
-  # background_image = "https://www.fv-floridsdorf.at/wp-content/uploads/2021/01/donauinsel-5164595_1920.jpg" # no default
-  # background_color = "#FFF" # default #FFF
-  # content_background_color = "#FAFAFA" # default #FAFAFA"
-  # content_max_width = "1100px" # default 1100px
-  # content_min_width = "320px" # default 320px
-  
+    min = '0.148.0'
