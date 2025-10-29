@@ -6,22 +6,23 @@ body.background-image {
   background-attachment: fixed;
 }
 
-.content {
-  max-width: var(--content-max-width);
-  min-width: var(--content-min-width);
-  margin: 0 auto;
-  padding: 0 1rem;
-  background-color: var(--content-background-color);
+.site {
+  background-color: var(--site-background-color);
+  max-width: var(--site-max-width);
+  min-width: var(--site-min-width);
+  margin: 0 3rem;
 }
 
-header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+main {
+  padding: 0 1rem;
+  background-color: var(--main-background-color);
 }
 
 footer {
-  border-top: 1px solid #222;
   margin-top: 1rem;
+  background-color: var(--footer-background-color);
+  color: #fff;
+  height: 110px;
 }
 
 a {

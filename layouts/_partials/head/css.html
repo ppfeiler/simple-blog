@@ -4,9 +4,17 @@
       --background-image: url({{ with .Site.Params.background_image }}{{ . }}{{ end }});
     {{- end }}
     --background-color: {{ with .Site.Params.background_color }}{{ . }}{{ else }}#FFF{{ end }};
-    --content-background-color: {{ with .Site.Params.content_background_color }}{{ . }}{{ else }}#FAFAFA{{ end }};
-    --content-max-width: {{ with .Site.Params.content_max_width }}{{ . }}{{ else }}1100px{{ end }};
-    --content-min-width: {{ with .Site.Params.content_min_width }}{{ . }}{{ else }}320px{{ end }};
+    --site-background-color: {{ with .Site.Params.site_background_color }}{{ . }}{{ else }}#FAFAFA{{ end }};
+    --site-max-width: {{ with .Site.Params.site_max_width }}{{ . }}{{ else }}1100px{{ end }};
+    --site-min-width: {{ with .Site.Params.site_min_width }}{{ . }}{{ else }}320px{{ end }};
+
+    --site-header-background-color: {{ with .Site.Params.site_header_background_color }}{{ . }}{{ else }}#FFF{{ end }};
+
+    --main-background-color: {{ with .Site.Params.main_background_color }}{{ . }}{{ else }}#FAFAFA{{ end }};
+
+    --footer-background-color: {{ with .Site.Params.footer_background_color }}{{ . }}{{ else }}#000{{ end }};
+    --footer-text-color: {{ with .Site.Params.footer_text_color }}{{ . }}{{ else }}#FFF{{ end }};
+
 
     background-color: var(--background-color);
   }

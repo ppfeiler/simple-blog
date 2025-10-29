@@ -4,12 +4,11 @@
   {{ partial "head.html" . }}
 </head>
 <body class="{{if .Site.Params.background_image}}background-image{{end}}">
-  <div class="content">
-    <header>
+  <div class="site">
+    <header class="site-header">
       {{ partial "header.html" . }}
     </header>
     <main>
-      baseOf.html
       {{ block "main" . }}{{ end }}
     </main>
     <footer>

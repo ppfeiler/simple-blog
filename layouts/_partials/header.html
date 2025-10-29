@@ -1,2 +1,13 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="site-header__inner">
+    <a class="site-brand" href="{{ "/" | relLangURL }}">
+      {{- with site.Params.brand_logo }}
+        <img class="site-brand__logo" src="{{ . | relURL }}" alt="{{ site.Title }}">
+      {{- else }}
+        <span class="site-brand__title">{{ site.Title }}</span>
+      {{- end }}
+    </a>
+
+    <div class="site-nav">
+        {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+</div>
