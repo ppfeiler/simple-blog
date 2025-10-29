@@ -1,5 +1,5 @@
 <div class="site-header__inner">
-    <a class="site-brand" href="{{ "/" | relLangURL }}">
+    <a class="site-brand" href="{{ relLangURL "" }}">
       {{- with site.Params.brand_logo }}
         <img class="site-brand__logo" src="{{ . | relURL }}" alt="{{ site.Title }}">
       {{- else }}
