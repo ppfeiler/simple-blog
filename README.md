@@ -2,6 +2,7 @@
 
 [![Hugo](https://img.shields.io/badge/hugo-0.148-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Build with Hugo](https://github.com/ppfeiler/simple-blog/workflows/Build%20with%20Hugo/badge.svg)
 
 ## Features
 
