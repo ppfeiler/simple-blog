@@ -39,6 +39,7 @@ Below is an example on how to create a new site from scratch:
 hugo new site mysite; cd mysite
 git init
 git submodule add https://github.com/ppfeiler/simple-blog themes/simple-blog
+cp -R themes/simple-blog/exampleBlog/content/* ./content
 ```
 
 ```sh
@@ -72,7 +73,6 @@ content_min_width = "320px"
 # (optional) The max width of the content box
 content_max_width = "1100px"
 
-
 # (optional) The Brand Logo which will be shown in the Header
 brand_logo = "https://..."
 ```
@@ -87,3 +87,17 @@ If you want lower maintenance, use one of the released versions. If you want to 
 This theme follows a simple incremental versioning. e.g. `v1.0.0`, `v2.0.0` and so on.
 
 If you want lower maintenance, use one of the released versions. If you want to live on the bleeding edge of changes, you can use the `main` branch and update your website when needed, this also the default branch.
+
+## Contributing
+
+### [Extra credits to contributors](https://github.com/ppfeiler/simple-blog/graphs/contributors)
+
+Contributions are welcome and I will review and consider pull requests.
+Primary goals are:
+
+- Keep it simple.
+- Keep minimal (or zero) default configuration.
+- Avoid interference with user-defined layouts.
+- Avoid using JS if it can be solved by CSS.
+
+Feel free to open issues if you find missing configuration or customisation options.

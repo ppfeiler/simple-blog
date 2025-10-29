@@ -1,0 +1,41 @@
+# hugo server --minify --themesDir ../..
+
+
+baseURL = 'http://0.0.0.0:1313/simple-blog/'
+title = 'My New Hugo Site'
+theme = 'simple-blog'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
+    weight = 30
+
+[params]
+# (optional) The Background Image wich will be shown on all pages.
+background_image = "https://www.fv-floridsdorf.at/wp-content/uploads/2021/01/donauinsel-5164595_1920.jpg"
+
+# (optional) The Background Color if no Background Image is given.
+background_color = "#FFF"
+
+# (optional) The Background Color of the content box
+content_background_color = "#FAFAFA"
+
+# (optional) The min width of the content box
+content_min_width = "320px"
+
+# (optional) The max width of the content box
+content_max_width = "1100px"
+
+# (optional) The Brand Logo which will be shown in the Header
+#brand_logo = "https://..."

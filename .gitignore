@@ -1,3 +1,9 @@
+exampleBlog/public/
+exampleBlog/resources/_gen/
+exampleBlog/assets/jsconfig.json
+exampleBloghugo_stats.json
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/hugo
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo
 
